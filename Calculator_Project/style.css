@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(176, 162, 162);
+}
+
+.calculator {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0px 2px 10px 1px rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.4);
+}
+
+input{
+    width: 300px;
+    padding: 24px;
+    margin: 10px;
+    outline: none;
+    border: none;
+    font-size: 32px;
+    text-align: right;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow:  0px 0px 8px rgba(0, 0, 0, 0.4);
+    color: #fff;
+}
+input::placeholder{
+    color: #fff;
+}
+
+button{
+    width: 60px;
+    height: 60px;
+    margin: 8px;
+    border-radius: 50%;
+    font-size: 24px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.7);
+    border: none;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.Ac, .Del{
+    font-size: 20px;
+}
+
+button:hover{
+    color: #fff;
+    background-color: #f67c14;
+}
+
+.equal-btn{
+    background-color: #f67c14;
+}
+
+.operator{
+    color: #eb8227;
+}
+
+@media (max-width: 600px) {
+    button{
+        font-size: 20px;
+    }
+    input{
+        font-size: 20px;
+    }
+}
